@@ -43,4 +43,4 @@ for i in medicine_list:
         print(f'{i.name.capitalize()} działa przeciwgorączkowo.')
     if i.no_inflamation:
         print(f'{i.name.capitalize()} działa przeciwzapalnie.')
-    print('-' * 50)
+    print('-' * 66)
