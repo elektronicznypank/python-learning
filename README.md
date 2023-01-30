@@ -1,3 +1,13 @@
+Hello.
+
+I've been learning Python.
+
+This is my training ground.
+
+I hope i will work with Python soon.
+
+------------------------------------
+
 Cześć.
 
 Uczę się programować w Pythonie.
