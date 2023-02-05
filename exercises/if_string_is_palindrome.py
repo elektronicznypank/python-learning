@@ -1,6 +1,6 @@
 # Write a function that checks if string is palindrome.
 
-def if_string_is_palindrome(string: str = input('Podaj ciąg znaków, które chcesz sprawdzić: ')):
+def if_string_is_palindrome(string: str = input('Podaj ciąg znaków, który chcesz sprawdzić: ')):
     rev_string: str = string[::-1]
     if string == '':
         return 'String jest pusty.'
