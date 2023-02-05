@@ -5,8 +5,9 @@ def if_string_is_palindrome(string: str = input('Podaj ciąg znaków, który chc
     if string == '':
         return 'String jest pusty.'
     else:
-        return 'Podany ciąg znaków jest palindromem.' \
-            if rev_string.lower().replace(' ', '').replace('.', '') == string.lower().replace(' ', '').replace('.', '')\
+        return 'Podany ciąg znaków jest palindromem.'\
+            if rev_string.lower().replace(' ', '').replace('.', '').replace(',', '')\
+            == string.lower().replace(' ', '').replace('.', '').replace(',', '')\
             else 'Podany ciąg znaków nie jest palindromem.'
 
 
