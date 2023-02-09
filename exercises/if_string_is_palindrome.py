@@ -11,9 +11,9 @@ def if_string_is_palindrome(string: str = input('Podaj ciąg liter i/lub cyfr, k
     if string == '':
         return 'String jest pusty.'
     else:
-        return 'Podany ciąg liter jest palindromem.'\
+        return 'Podany ciąg liter i/lub cyfr jest palindromem.'\
             if rev_string.lower() == string.lower()\
-            else 'Podany ciąg liter nie jest palindromem.'
+            else 'Podany ciąg liter i/lub cyfr nie jest palindromem.'
 
 
 print(if_string_is_palindrome())
