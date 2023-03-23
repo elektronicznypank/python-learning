@@ -46,35 +46,16 @@ while guess != x:
     supp_list: list = []
     x_list: list = list(x[:])
 
-    if guess[0] == x[0]:
-        in_place += 1
-        x_list.remove(guess[0])
-        supp_list.append(guess[0])
-    if guess[1] == x[1]:
-        in_place += 1
-        x_list.remove(guess[1])
-        supp_list.append(guess[1])
-    if guess[2] == x[2]:
-        in_place += 1
-        x_list.remove(guess[2])
-        supp_list.append(guess[2])
-    if guess[3] == x[3]:
-        in_place += 1
-        x_list.remove(guess[3])
-        supp_list.append(guess[3])
+    for i, j in enumerate(guess):
+        if guess[i] == x[i]:
+            in_place += 1
+            x_list.remove(guess[i])
+            supp_list.append(guess[i])
 
-    if guess[0] in x_list and guess[0] not in supp_list:
-        in_x += 1
-        x_list.remove(guess[0])
-    if guess[1] in x_list and guess[1] not in supp_list:
-        in_x += 1
-        x_list.remove(guess[1])
-    if guess[2] in x_list and guess[2] not in supp_list:
-        in_x += 1
-        x_list.remove(guess[2])
-    if guess[3] in x_list and guess[3] not in supp_list:
-        in_x += 1
-        x_list.remove(guess[3])
+    for i, j in enumerate(guess):
+        if guess[i] in x_list and guess[i] not in supp_list:
+            in_x += 1
+            x_list.remove(guess[i])
 
     if x == guess:
         pass
